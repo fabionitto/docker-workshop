@@ -20,7 +20,25 @@ DTI/MP
 
 ---
 
-# Conteiner
+## Contêineres
+
+- LXC (Linux Containers) - 2008
+
+- Funcionalidades de virtualização no Kernel do linux: 
+
+  - Namespaces
+
+  - APparmor e SELinux
+
+  - Cgroups
+
+  - Seccomp Policies
+
+  - Chroots
+
+--
+
+## VM's vs Contêineres
 
 ---
 
