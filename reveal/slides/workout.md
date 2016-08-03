@@ -12,30 +12,43 @@ DTI/MP
 
 ---
 
-# Quem somos?
+## Quem somos?
 
 ---
 
-# Motivação
+## Motivação
 
 ---
 
-## Contêineres
+## O que é Contêiner?
 
-- LXC (Linux Containers) - 2008
+Área isolada de processamento com separação entre processos.
 
-- Funcionalidades de virtualização no Kernel do linux: 
+- Implementado com LXC (Linux Containers) - 2008  
+  - Virtualização a nível de SO.
 
-  - Namespaces
+--
 
-  - APparmor e SELinux
+- Funcionalidades de virtualização no Kernel do linux:
+  - Namespaces <!-- .element: class="fragment" data-fragment-index="3" -->
+  - Cgroups <!-- .element: class="fragment" data-fragment-index="4" -->
+  - Capabilities <!-- .element: class="fragment" data-fragment-index="5" -->
+  - APParmor e SELinux <!-- .element: class="fragment" data-fragment-index="6" -->
+  - Seccomp Policies <!-- .element: class="fragment" data-fragment-index="7" -->
+  - Chroots <!-- .element: class="fragment" data-fragment-index="8" -->
 
-  - Cgroups
+Note: 
+Namespaces - isolamento de PID(processo), mounts, rede, ipc(ex. fifos, semaforos, memoria compartilhada), UTS (hostnames e domainname), Usuarios
 
-  - Seccomp Policies
+cgroups - isolamento de recursos - CPU, memoria, disco, rede
 
-  - Chroots
+APParmor e SELinux - Controle de acesso a escrita e modificação de arquivos, principalmente /proc
 
+Capabilities: Controle sobre as capacidades do usuario root (UID 0), ex. 
+
+Seccomp - Controle sobre chamadas de sistema 
+
+chroot - altera o diretorio root do sistema/conteiner
 --
 
 ## VM's vs Contêineres
