@@ -59,6 +59,31 @@ chroot - altera o diretorio root do sistema/conteiner
 
 --
 
+## Componentes docker
+![Docker](images/componentes1.png) <!-- .slide: data-transition="fade-out" -->
+--
+## Docker run
+![Docker](images/componentes2.png) <!-- .slide: data-transition="fade" -->
+--
+## Docker run
+![Docker](images/componentes3.png) <!-- .slide: data-transition="fade" -->
+--
+## Docker run
+![Docker](images/componentes4.png) <!-- .slide: data-transition="fade" -->
+--
+## Docker run
+![Docker](images/componentes5.png) <!-- .slide: data-transition="fade" -->
+--
+## Docker pull 
+![Docker](images/componentes6.png) <!-- .slide: data-transition="fade" -->
+--
+## Docker pull
+![Docker](images/componentes7.png) <!-- .slide: data-transition="fade" -->
+--
+## Docker build
+![Docker](images/componentes8.png) <!-- .slide: data-transition="fade" -->
+--
+
 Demo
 
 ---
