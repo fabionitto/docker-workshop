@@ -12,7 +12,7 @@ Vagrant.configure(2) do |config|
 
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://atlas.hashicorp.com/search.
-  config.vm.box = "bento/centos-7.2"
+  config.vm.box = "bento/centos-6.7"
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
@@ -55,9 +55,15 @@ Vagrant.configure(2) do |config|
   # View the documentation for the provider you are using for more
   # information on available options.
 
+  config.vm.provision "shell", inline: "cp /vagrant/docker /etc/default/docker"
+
   config.vm.provision "docker" do |d|
     d.pull_images "linhares/sei-app:1.5.5"
     d.pull_images "centos:7"
+    d.pull_images "mysql:5.5"
+    d.pull_images "memcached"
+    d.pull_images "haproxy"
+    d.pull_images "hub.docker.planejamento.gov.br/solr:4"
   end
 
   # Define a Vagrant Push strategy for pushing to Atlas. Other push strategies

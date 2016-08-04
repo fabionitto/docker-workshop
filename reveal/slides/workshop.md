@@ -49,7 +49,22 @@ Capabilities: Controle sobre as capacidades do usuario root (UID 0), ex.
 Seccomp - Controle sobre chamadas de sistema 
 
 chroot - altera o diretorio root do sistema/conteiner
+
+---
+## Máquina Física
+![Docker](images/maquinaFisica.png) <!-- .slide: data-transition="fade-out" -->
 --
+## Hypervisor
+![Docker](images/hypervisor.png) <!-- .slide: data-transition="fade" -->
+--
+## Contêineres
+![Docker](images/container.png) <!-- .slide: data-transition="fade" -->
+
+---
+## Porque contêineres?
+
+
+---
 
 ## VM's vs Contêineres
 
@@ -102,6 +117,13 @@ Demo
 
 # Orquestração
 
+## Por que cluster e orquestração?
+
+- Alta disponibilidade
+- Resiliência
+- Escalabilidade automática
+- Deploy e rollback imediato e sem indisponibilidade
+
 ---
 
 # Kubernetes
@@ -110,4 +132,6 @@ Demo
 
 Demo
 
-- Turn off alarm <!-- .element: class="fragment" data-fragment-index="2" -->
+---
+
+# Obrigado!
