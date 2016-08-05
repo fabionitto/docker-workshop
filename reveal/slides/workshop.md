@@ -51,17 +51,42 @@ Seccomp - Controle sobre chamadas de sistema
 chroot - altera o diretorio root do sistema/conteiner
 
 ---
+## Porque contêineres?
+
 ## Máquina Física
 ![Docker](images/maquinaFisica.png) <!-- .slide: data-transition="fade-out" -->
+
+- Deployment lento
+- Alto custo
+- Disperdicio de recursos
+- Dificuldade de escalar
+- Dificuldade de migração
+- Vendor Lock-in
+
 --
 ## Hypervisor
 ![Docker](images/hypervisor.png) <!-- .slide: data-transition="fade" -->
+
+- Pool de recursos
+- Maior facilidade de escala
+- VMs na nuvem
+  - Elasticidade
+  - Pay as you go
+
+- Alocação de recursos ainda necessária
+- OS guest necessário
+  - recursos disperdiçados
+- Portabilidade não garantida
+
 --
 ## Contêineres
 ![Docker](images/container.png) <!-- .slide: data-transition="fade" -->
 
----
-## Porque contêineres?
+- Mais leves (tamanho)
+- Sem OS guest necessário
+- Menos recursos necessarios (CPU,RAM,Storage)
+  - Mais containers por host do que VMs
+- Maior portabilidade
 
 
 ---
