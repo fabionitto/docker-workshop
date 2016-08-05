@@ -97,6 +97,8 @@ chroot - altera o diretorio root do sistema/conteiner
 ---
 ## Porque contêineres?
 
+--
+
 ## Máquina Física
 ![Docker](images/maquinaFisica.png) <!-- .element: align="left" width="500" style="border:none; background:none; box-shadow:none" class="fragment" data-fragment-index="0" -->
 
@@ -105,7 +107,7 @@ chroot - altera o diretorio root do sistema/conteiner
 - Desperdicio de recursos	<!-- .element: class="fragment" data-fragment-index="3" -->
 - Dificuldade de escalar	<!-- .element: class="fragment" data-fragment-index="4" -->
 - Dificuldade de migração	<!-- .element: class="fragment" data-fragment-index="5" -->
-- Vendor Lock-in		<!-- .element: class="fragment" data-fragment-index="6" -->
+<!-- - Vendor Lock-in -->
 
 --
 ## Hypervisor
@@ -116,7 +118,6 @@ chroot - altera o diretorio root do sistema/conteiner
 - VMs na nuvem			<!-- .element: class="fragment" data-fragment-index="3" -->
   - Elasticidade		<!-- .element: class="fragment" data-fragment-index="3" -->
   - Pay as you go		<!-- .element: class="fragment" data-fragment-index="3" -->
-
 - Alocação de recursos <br> 
   ainda necessária		<!-- .element: class="fragment" data-fragment-index="4" -->
 - OS guest necessário				<!-- .element: class="fragment" data-fragment-index="5" -->
@@ -138,9 +139,15 @@ Note: Maior portabilidade pois abstrai a rede, filesystem e outros recursos.
 
 ---
 
-# Docker
+## Docker-Engine
 
-![Docker](images/dockerArch.png) <!-- .element: width="400" style="border:none; background:none; box-shadow:none"--> 
+![Docker](images/dockerArch.png) <!-- .element: align="left" width="400" style="border:none; background:none; box-shadow:none" class="fragment" data-fragment-index="0" --> 
+
+- Docker Client	<!-- .element: class="fragment" data-fragment-index="1" -->
+- Docker Daemon <!-- .element: class="fragment" data-fragment-index="1" -->
+- Contêineres	<!-- .element: class="fragment" data-fragment-index="1" -->
+- Imagens	<!-- .element: class="fragment" data-fragment-index="1" -->
+- Registry	<!-- .element: class="fragment" data-fragment-index="1" -->
 
 --
 
@@ -173,11 +180,11 @@ Demo
 
 ---
 
-# Provisionamento
+## Provisionamento
 
 ---
 
-# Docker-compose
+## Docker-compose
 
 --
 
@@ -185,7 +192,9 @@ Demo
 
 ---
 
-# Orquestração
+## Orquestração
+
+--
 
 ## Por que cluster e orquestração?
 
@@ -196,7 +205,7 @@ Demo
 
 ---
 
-# Kubernetes
+## Kubernetes
 
 --
 
@@ -206,9 +215,5 @@ Demo
 
 # Obrigado!
 
-
-- Fábio Nitto 		 
-  - fabio.nitto@planejamento.gov.br
-----  
-- Marcelo Linhares
-  - marcelo.linhares@planejamento.gov.br
+> **fabio.nitto**@planejamento.gov.br
+> **marcelo.linhares**@planejamento.gov.br
