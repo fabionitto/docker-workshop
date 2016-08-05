@@ -25,7 +25,7 @@ DTI/MP
 
 ---
 
-### Dificuldades encontradas 
+### Dificuldades encontradas <!-- .slide: data-transition="fade" -->
 
 - Diversidade de fontes externas fornecendo sistemas <!-- .element: class="fragment" data-fragment-index="1" -->
     - fábrica <!-- .element: class="fragment" data-fragment-index="2" -->
@@ -33,9 +33,9 @@ DTI/MP
     - demais áreas <!-- .element: class="fragment" data-fragment-index="4" -->
     - fábricas contratadas pelas áreas <!-- .element: class="fragment" data-fragment-index="5" -->
 
----
+--
 
-### Dificuldades encontradas 
+### Dificuldades encontradas <!-- .slide: data-transition="fade-in" -->
 
 - Ausência de Documentação (Implant/Sust) <!-- .element: class="fragment" data-fragment-index="1" -->
 - Ausência de Padrões <!-- .element: class="fragment" data-fragment-index="2" -->
@@ -135,13 +135,12 @@ chroot - altera o diretorio root do sistema/conteiner
 - Maior portabilidade			<!-- .element: class="fragment" data-fragment-index="4" -->	
 
 Note: Maior portabilidade pois abstrai a rede, filesystem e outros recursos.
----
-
-## VM's vs Contêineres
 
 ---
 
 # Docker
+
+![Docker](images/dockerArch.png) <!-- .element: width="400" style="border:none; background:none; box-shadow:none"--> 
 
 --
 
