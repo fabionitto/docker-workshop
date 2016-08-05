@@ -54,41 +54,43 @@ chroot - altera o diretorio root do sistema/conteiner
 ## Porque contêineres?
 
 ## Máquina Física
-![Docker](images/maquinaFisica.png) <!-- .slide: data-transition="fade-out" -->
+![Docker](images/maquinaFisica.png) <!-- .element: align="left" width="500" style="border:none; background:none; box-shadow:none" class="fragment" data-fragment-index="0" -->
 
-- Deployment lento
-- Alto custo
-- Disperdicio de recursos
-- Dificuldade de escalar
-- Dificuldade de migração
-- Vendor Lock-in
+- Deployment lento		<!-- .element: class="fragment" data-fragment-index="1" -->
+- Alto custo			<!-- .element: class="fragment" data-fragment-index="2" -->
+- Desperdicio de recursos	<!-- .element: class="fragment" data-fragment-index="3" -->
+- Dificuldade de escalar	<!-- .element: class="fragment" data-fragment-index="4" -->
+- Dificuldade de migração	<!-- .element: class="fragment" data-fragment-index="5" -->
+- Vendor Lock-in		<!-- .element: class="fragment" data-fragment-index="6" -->
 
 --
 ## Hypervisor
-![Docker](images/hypervisor.png) <!-- .slide: data-transition="fade" -->
+![Docker](images/hypervisor.png) <!-- .element: align="left" width="450" style="border:none; background:none; box-shadow:none" class="fragment" data-fragment-index="0" --> 
 
-- Pool de recursos
-- Maior facilidade de escala
-- VMs na nuvem
-  - Elasticidade
-  - Pay as you go
+- Pool de recursos		<!-- .element: class="fragment" data-fragment-index="1" -->
+- Maior facilidade de escala	<!-- .element: class="fragment" data-fragment-index="2" -->
+- VMs na nuvem			<!-- .element: class="fragment" data-fragment-index="3" -->
+  - Elasticidade		<!-- .element: class="fragment" data-fragment-index="3" -->
+  - Pay as you go		<!-- .element: class="fragment" data-fragment-index="3" -->
 
-- Alocação de recursos ainda necessária
-- OS guest necessário
-  - recursos disperdiçados
-- Portabilidade não garantida
+- Alocação de recursos <br> 
+  ainda necessária		<!-- .element: class="fragment" data-fragment-index="4" -->
+- OS guest necessário				<!-- .element: class="fragment" data-fragment-index="5" -->
+  - recursos desperdiçados			<!-- .element: class="fragment" data-fragment-index="5" -->
+- Portabilidade não garantida			<!-- .element: class="fragment" data-fragment-index="6" -->
 
 --
 ## Contêineres
-![Docker](images/container.png) <!-- .slide: data-transition="fade" -->
+![Docker](images/container.png) <!-- .element: align="left" width="400" style="border:none; background:none; box-shadow:none" class="fragment" data-fragment-index="0" --> 
 
-- Mais leves (tamanho)
-- Sem OS guest necessário
-- Menos recursos necessarios (CPU,RAM,Storage)
-  - Mais containers por host do que VMs
-- Maior portabilidade
+- Mais leves (tamanho)			<!-- .element: class="fragment" data-fragment-index="1" -->
+- Sem OS guest necessário		<!-- .element: class="fragment" data-fragment-index="2" -->
+- Menos recursos necessarios<br>
+  (CPU,RAM,Storage) 			<!-- .element: class="fragment" data-fragment-index="3" -->
+  - Mais containers por host		<!-- .element: class="fragment" data-fragment-index="3" -->
+- Maior portabilidade			<!-- .element: class="fragment" data-fragment-index="4" -->	
 
-
+Note: Maior portabilidade pois abstrai a rede, filesystem e outros recursos.
 ---
 
 ## VM's vs Contêineres
