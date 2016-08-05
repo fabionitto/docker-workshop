@@ -204,10 +204,20 @@ Demo
 
 ## Por que cluster e orquestração?
 
+- Docker compose em apenas um host
 - Alta disponibilidade
 - Resiliência
 - Escalabilidade automática
 - Deploy e rollback imediato e sem indisponibilidade
+
+--
+
+## Opções
+
+- Kubernetes
+- Docker Swarm
+- Apache Mesos
+- Nomad
 
 ---
 
