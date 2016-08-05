@@ -14,7 +14,7 @@ DTI/MP
 
 ## Quem somos?
 
-# Marcelo Linhares teste branch commit
+
 
 ---
 
@@ -64,6 +64,18 @@ DTI/MP
 - AFD - Assentamento Funcional Digital <!-- .element: class="fragment" data-fragment-index="4" -->
 - SEI - Sistema Eletrônico de Informações (desde 18/07) <!-- .element: class="fragment" data-fragment-index="5" -->
 - Rancher - Nuvem <!-- .element: class="fragment" data-fragment-index="6" -->
+
+---
+
+# ![Docker](images/seinumeros.png) <!-- .element: width="80%" height="80%" style="border:none; background:none; box-shadow:none"-->
+
+---
+
+![Docker](images/seikubenumeros1.png) <!-- .slide: data-transition="fade-out" -->
+
+---
+
+![Docker](images/seikubenumeros2.png) <!-- .slide: data-transition="fade-out" -->
 
 ---
 ## O que é Contêiner?
@@ -196,6 +208,18 @@ Demo
 - Resiliência
 - Escalabilidade automática
 - Deploy e rollback imediato e sem indisponibilidade
+
+---
+
+![Docker](images/kubernetes_archi01.png) <!-- .slide: data-transition="fade-out" -->
+
+---
+
+![Docker](images/kubernetes_archi02.png) <!-- .slide: data-transition="fade-out" -->
+
+---
+
+![Docker](images/kubernetes_archi03.png) <!-- .slide: data-transition="fade-out" -->
 
 ---
 
