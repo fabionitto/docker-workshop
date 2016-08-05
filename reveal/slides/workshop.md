@@ -18,8 +18,52 @@ DTI/MP
 
 ## Motivação
 
+<br>
+<br>
+
+#### Implantação / Sustentação de Sistemas <!-- .element: class="fragment" data-fragment-index="1" -->
+
 ---
 
+### Dificuldades encontradas 
+
+- Diversidade de fontes externas fornecendo sistemas <!-- .element: class="fragment" data-fragment-index="1" -->
+    - fábrica <!-- .element: class="fragment" data-fragment-index="2" -->
+    - desenvolvimento interno <!-- .element: class="fragment" data-fragment-index="3" -->
+    - demais áreas <!-- .element: class="fragment" data-fragment-index="4" -->
+    - fábricas contratadas pelas áreas <!-- .element: class="fragment" data-fragment-index="5" -->
+
+---
+
+### Dificuldades encontradas 
+
+- Ausência de Documentação (Implant/Sust) <!-- .element: class="fragment" data-fragment-index="1" -->
+- Ausência de Padrões <!-- .element: class="fragment" data-fragment-index="2" -->
+- Ausência de Configurações Apropriadas <!-- .element: class="fragment" data-fragment-index="3" -->
+- Custo de sustentação (recursos humanos) <!-- .element: class="fragment" data-fragment-index="4" -->
+- Alto risco ao migrar <!-- .element: class="fragment" data-fragment-index="5" -->
+
+
+---
+
+### Conteinerização / Orquestração
+<br>
+
+- Borg - Google <!-- .element: class="fragment" data-fragment-index="1" -->
+- gmail, maps, search, docs, etc <!-- .element: class="fragment" data-fragment-index="1" -->
+- de Borg para Kubernetes <!-- .element: class="fragment" data-fragment-index="2" -->
+
+---
+
+### Como está no MP
+
+- começamos a estudar em 02/2016 <!-- .element: class="fragment" data-fragment-index="2" -->
+- fase experimental (em produção) <!-- .element: class="fragment" data-fragment-index="3" -->
+- AFD - Assentamento Funcional Digital <!-- .element: class="fragment" data-fragment-index="4" -->
+- SEI - Sistema Eletrônico de Informações (desde 18/07) <!-- .element: class="fragment" data-fragment-index="5" -->
+- Rancher - Nuvem <!-- .element: class="fragment" data-fragment-index="6" -->
+
+---
 ## O que é Contêiner?
 
 Área isolada de processamento com separação entre processos.
@@ -162,3 +206,10 @@ Demo
 ---
 
 # Obrigado!
+
+
+- Fábio Nitto 		 
+  - fabio.nitto@planejamento.gov.br
+----  
+- Marcelo Linhares
+  - marcelo.linhares@planejamento.gov.br
