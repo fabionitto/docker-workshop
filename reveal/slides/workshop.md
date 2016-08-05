@@ -1,5 +1,8 @@
 
-# ![Docker](images/docker.png) <!-- .element: width="250" height="250" style="border:none; background:none; box-shadow:none"--> Docker + ![Kubernetes](images/kubernetes.png) <!-- .element: width="200" height="200" style="border:none; background:none; box-shadow:none"--> Kubernetes
+![Docker](images/docker.png) <!-- .element: height="200" align="left" style="border:none; background:none; box-shadow:none"--> 
+![Kubernetes](images/kubernetes.png) <!-- .element: height="150" align="right" style="border:none; background:none; box-shadow:none"-->
+# Docker + 
+## Kubernetes 
 
 --
 
@@ -9,7 +12,6 @@
 --------------------------------------------
 
 DTI/MP
-
 ---
 
 ## Quem somos?
@@ -69,7 +71,7 @@ DTI/MP
 Área isolada de processamento com separação entre processos.
 
 - Implementado com LXC (Linux Containers) - 2008  
-  - Virtualização a nível de SO.
+- Virtualização a nível de SO.
 
 --
 
@@ -139,7 +141,7 @@ Note: Maior portabilidade pois abstrai a rede, filesystem e outros recursos.
 
 ---
 
-## Docker-Engine
+## Docker Engine
 
 ![Docker](images/dockerArch.png) <!-- .element: align="left" width="400" style="border:none; background:none; box-shadow:none" class="fragment" data-fragment-index="0" --> 
 
@@ -149,6 +151,10 @@ Note: Maior portabilidade pois abstrai a rede, filesystem e outros recursos.
 - Imagens	<!-- .element: class="fragment" data-fragment-index="1" -->
 - Registry	<!-- .element: class="fragment" data-fragment-index="1" -->
 
+Note: Afinal o que é docker?
+      Utilizar o LXC direto é complexo.
+      Docker criou uma interface amigável para criar, executar e gerenciar containers.
+      Meio de campo entre usuario e kernel
 --
 
 ## Componentes docker
