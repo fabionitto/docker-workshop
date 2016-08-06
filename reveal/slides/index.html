@@ -55,22 +55,45 @@
         transition: Reveal.getQueryHash().transition || 'slide', // default/cube/page/concave/zoom/linear/fade/none
 	
 	width: 1280,
-	height: 960,
+	height: 760,
 	margin: 0.1,
 	minScale: 0.2,
 	maxScale: 2.0,
 
+	// Multiplex
+	//multiplex: {
+	//	secret: '14705152298329047327',
+	//	id: '2087673689075c55',
+	//	url: 'https://reveal-js-multiplex-ccjbegmaii.now.sh'
+	//},
+
         // Optional libraries used to extend on reveal.js
         dependencies: [
+	//  { src: '//cdn.socket.io/socket.io-1.3.5.js', async: true },
+        //  { src: 'plugin/multiplex/master.js', async: true },
+
+        // and if you want speaker notes
+        //  { src: 'plugin/notes-server/client.js', async: true },
+
+
           { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
           { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
           { src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
           { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-        { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } }
 //          { src: 'reveal.js/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; }, }
 //          { src: 'reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
 ]
 });
+        Reveal.addEventListener( 'auto-loop-next', function() {
+             Reveal.configure({ autoSlideMethod: Reveal.navigateNext });
+        }, false );
+
+        Reveal.addEventListener( 'auto-loop-prev', function() {
+          setTimeout(function() {
+		Reveal.up();
+		}, 10000);
+        }, false );
     </script>
     </body>
 </html>

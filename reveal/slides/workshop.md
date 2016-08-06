@@ -1,10 +1,13 @@
+<!-- .slide: data-autoslide="10000" data-transition-speed="slow" -->
 
-![Docker](images/docker.png) <!-- .element: height="200" align="left" style="border:none; background:none; box-shadow:none"--> 
-![Kubernetes](images/kubernetes.png) <!-- .element: height="150" align="right" style="border:none; background:none; box-shadow:none"-->
+![Docker](images/docker.png) <!-- .element: height="240" align="left" style="border:none; background:none; box-shadow:none"--> 
+![Kubernetes](images/kubernetes.png) <!-- .element: height="240" align="right" style="border:none; background:none; box-shadow:none"-->
 # Docker + 
-## Kubernetes 
+# Kubernetes 
 
 --
+
+<!-- .slide: data-state="auto-loop-prev" data-transition-speed="slow"-->
 
 ## O Poder dos contêineres na Infraestrutura
 ### Marcelo Linhares e Fábio Nitto
@@ -77,17 +80,19 @@ Note: - Convidamos vcs a entrarem nomundo dos conteineres e orquestr
 - SEI - Sistema Eletrônico de Informações (desde 18/07) <!-- .element: class="fragment" data-fragment-index="5" -->
 - Rancher - Nuvem <!-- .element: class="fragment" data-fragment-index="6" -->
 
---
-
-# ![Docker](images/seinumeros.png) <!-- .element: width="80%" height="80%" style="border:none; background:none; box-shadow:none"-->
-
---
-
-![Docker](images/seikubenumeros1.png) <!-- .slide: data-transition="fade-out" -->
+---
+<!-- .slide: data-background-image="none" -->
+![Docker](images/seinumeros.png) <!-- .element: height="700" style="border:none; background:none; box-shadow:none"-->
 
 --
 
-![Docker](images/seikubenumeros2.png) <!-- .slide: data-transition="fade-out" -->
+<!-- .slide: data-background-image="none"  data-transition="fade" -->
+![Docker](images/seikubenumeros1.png) <!-- .element: height="600" -->
+
+--
+
+<!-- .slide: data-background-image="none" data-transition="fade" -->
+![Docker](images/seikubenumeros2.png) <!-- .element: height="600" -->
 
 ---
 ## O que é Contêiner?
@@ -212,6 +217,11 @@ Demo
 
 ## Docker Compose
 
+- Deploy mais fácil:
+  - docker-compose up
+  - docker-compose stop
+
+- Escalabilidade
 
 Note: Exemplo SEI: versão 1 da api.
 	Docker compose já está na versão 2 da API, contemplando volumes e networks.
