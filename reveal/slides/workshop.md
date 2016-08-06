@@ -188,6 +188,9 @@ Demo
 
 ## Docker Compose
 
+
+Note: Exemplo SEI: versão 1 da api.
+	Docker compose já está na versão 2 da API, contemplando volumes e networks.
 ---
 
 ## Provisionamento
