@@ -37,7 +37,7 @@ DTI/MP
 
 --
 
-### Dificuldades encontradas <!-- .slide: data-transition="fade-in" -->
+### Dificuldades encontradas <!-- .slide: data-transition="none" -->
 
 - Ausência de Documentação (Implant/Sust) <!-- .element: class="fragment" data-fragment-index="1" -->
 - Ausência de Padrões <!-- .element: class="fragment" data-fragment-index="2" -->
@@ -186,11 +186,11 @@ Demo
 
 ---
 
-## Provisionamento
+## Docker Compose
 
 ---
 
-## Docker-compose
+## Provisionamento
 
 --
 
