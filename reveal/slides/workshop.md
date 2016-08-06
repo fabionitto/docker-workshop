@@ -25,7 +25,11 @@ DTI/MP
 
 #### Implantação / Sustentação de Sistemas <!-- .element: class="fragment" data-fragment-index="1" -->
 
----
+Note: Entrada no MP em 2010 - na infra 2014
+- Explicar q a motivação veio na infra
+- Tive contato com as dificuldades em instalar e implantar sistemas novos de acordo com a lista abaixo
+
+--
 
 ### Dificuldades encontradas <!-- .slide: data-transition="fade" -->
 
@@ -45,6 +49,10 @@ DTI/MP
 - Custo de sustentação (recursos humanos) <!-- .element: class="fragment" data-fragment-index="4" -->
 - Alto risco ao migrar <!-- .element: class="fragment" data-fragment-index="5" -->
 
+Note: Qual o workaround para os problemas acima?
+Ministerio precisa ser adaptavel a solucoes diferentes
+Legal vc conseguir usar um unico banco, mas nem sempre é possivel
+O SEI, por ex, em php foi muito criticado por n ser java (mas resolve para o cidadão)
 
 ---
 
@@ -54,6 +62,10 @@ DTI/MP
 - Borg - Google <!-- .element: class="fragment" data-fragment-index="1" -->
 - gmail, maps, search, docs, etc <!-- .element: class="fragment" data-fragment-index="1" -->
 - de Borg para Kubernetes <!-- .element: class="fragment" data-fragment-index="2" -->
+
+Note: - Convidamos vcs a entrarem nomundo dos conteineres e orquestr
+- explicar diferença de orquestração x orq de contein
+- os conteineres foram feitos para serem destruidos, eles n tem alma pois a alma esta nos dados persistidos
 
 ---
 
@@ -65,15 +77,15 @@ DTI/MP
 - SEI - Sistema Eletrônico de Informações (desde 18/07) <!-- .element: class="fragment" data-fragment-index="5" -->
 - Rancher - Nuvem <!-- .element: class="fragment" data-fragment-index="6" -->
 
----
+--
 
 # ![Docker](images/seinumeros.png) <!-- .element: width="80%" height="80%" style="border:none; background:none; box-shadow:none"-->
 
----
+--
 
 ![Docker](images/seikubenumeros1.png) <!-- .slide: data-transition="fade-out" -->
 
----
+--
 
 ![Docker](images/seikubenumeros2.png) <!-- .slide: data-transition="fade-out" -->
 
