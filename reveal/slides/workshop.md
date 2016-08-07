@@ -81,15 +81,16 @@ Note: - Convidamos vcs a entrarem nomundo dos conteineres e orquestr
 - Rancher - Nuvem <!-- .element: class="fragment" data-fragment-index="6" -->
 
 ---
+
 <!-- .slide: data-background-image="none" -->
 ![Docker](images/seinumeros.png) <!-- .element: height="700" style="border:none; background:none; box-shadow:none"-->
 
---
+---
 
-<!-- .slide: data-background-image="none"  data-transition="fade" -->
+<!-- .slide: data-background-image="none" data-transition="fade" -->
 ![Docker](images/seikubenumeros1.png) <!-- .element: height="600" -->
 
---
+---
 
 <!-- .slide: data-background-image="none" data-transition="fade" -->
 ![Docker](images/seikubenumeros2.png) <!-- .element: height="600" -->
@@ -97,20 +98,35 @@ Note: - Convidamos vcs a entrarem nomundo dos conteineres e orquestr
 ---
 ## O que é Contêiner?
 
-Área isolada de processamento com separação entre processos.
-
-- Implementado com LXC (Linux Containers) - 2008  
+- Conceito similar ao de Máquina Virtual.
 - Virtualização a nível de SO.
 
 --
 
-- Funcionalidades de virtualização no Kernel do linux:
-  - Namespaces <!-- .element: class="fragment" data-fragment-index="3" -->
-  - Cgroups <!-- .element: class="fragment" data-fragment-index="4" -->
-  - Capabilities <!-- .element: class="fragment" data-fragment-index="5" -->
-  - APParmor e SELinux <!-- .element: class="fragment" data-fragment-index="6" -->
-  - Seccomp Policies <!-- .element: class="fragment" data-fragment-index="7" -->
-  - Chroots <!-- .element: class="fragment" data-fragment-index="8" -->
+> Formalmente, é um processo ou grupo de processos que executam de forma isolada:
+
+- Processo (PID)
+- Usuários
+- Rede
+- Recursos (CPU, RAM, Disco)
+- Estrutura de diretórios
+- Bibliotecas
+
+Note: Na prática, o processo "enxerga" apenas seu grupo de processos, seus próprios usuários. Sua própria rede, recursos e estrutura de diretórios. O processo "acha" que só existe ele e seu grupo rodando na máquina.
+
+A diferença para VM é que não existe o SO.
+
+Notem que a VM possui todo esse isolamento, mas é um sistema completo. O conteinr é apenas um processo ou grupo de processos.
+--
+
+- Implementado com LXC (Linux Containers - 2008)
+- Interface direto com o Kernel do linux: <!-- .element: class="fragment" data-fragment-index="0" --> 
+  - Namespaces <!-- .element: class="fragment" data-fragment-index="1" -->
+  - Cgroups <!-- .element: class="fragment" data-fragment-index="1" -->
+  - Capabilities <!-- .element: class="fragment" data-fragment-index="1" -->
+  - APParmor e SELinux <!-- .element: class="fragment" data-fragment-index="1" -->
+  - Seccomp Policies <!-- .element: class="fragment" data-fragment-index="1" -->
+  - Chroots <!-- .element: class="fragment" data-fragment-index="1" -->
 
 Note: 
 Namespaces - isolamento de PID(processo), mounts, rede, ipc(ex. fifos, semaforos, memoria compartilhada), UTS (hostnames e domainname), Usuarios
@@ -126,65 +142,109 @@ Seccomp - Controle sobre chamadas de sistema
 chroot - altera o diretorio root do sistema/conteiner
 
 ---
-## Porque contêineres?
+
+##  Interface direto com o Kernel?
+## Parece dificil...
 
 --
 
-## Máquina Física
-![Docker](images/maquinaFisica.png) <!-- .element: align="left" width="500" style="border:none; background:none; box-shadow:none" class="fragment" data-fragment-index="0" -->
+### Docker simplifica o uso:
 
-- Deployment lento		<!-- .element: class="fragment" data-fragment-index="1" -->
-- Alto custo			<!-- .element: class="fragment" data-fragment-index="2" -->
-- Desperdicio de recursos	<!-- .element: class="fragment" data-fragment-index="3" -->
-- Dificuldade de escalar	<!-- .element: class="fragment" data-fragment-index="4" -->
-- Dificuldade de migração	<!-- .element: class="fragment" data-fragment-index="5" -->
-<!-- - Vendor Lock-in -->
-
---
-## Hypervisor
-![Docker](images/hypervisor.png) <!-- .element: align="left" width="450" style="border:none; background:none; box-shadow:none" class="fragment" data-fragment-index="0" --> 
-
-- Pool de recursos		<!-- .element: class="fragment" data-fragment-index="1" -->
-- Maior facilidade de escala	<!-- .element: class="fragment" data-fragment-index="2" -->
-- VMs na nuvem			<!-- .element: class="fragment" data-fragment-index="3" -->
-  - Elasticidade		<!-- .element: class="fragment" data-fragment-index="3" -->
-  - Pay as you go		<!-- .element: class="fragment" data-fragment-index="3" -->
-- Alocação de recursos <br> 
-  ainda necessária		<!-- .element: class="fragment" data-fragment-index="4" -->
-- OS guest necessário				<!-- .element: class="fragment" data-fragment-index="5" -->
-  - recursos desperdiçados			<!-- .element: class="fragment" data-fragment-index="5" -->
-- Portabilidade não garantida			<!-- .element: class="fragment" data-fragment-index="6" -->
-
---
-## Contêineres
-![Docker](images/container.png) <!-- .element: align="left" width="400" style="border:none; background:none; box-shadow:none" class="fragment" data-fragment-index="0" --> 
-
-- Mais leves (tamanho)			<!-- .element: class="fragment" data-fragment-index="1" -->
-- Sem OS guest necessário		<!-- .element: class="fragment" data-fragment-index="2" -->
-- Menos recursos necessarios<br>
-  (CPU,RAM,Storage) 			<!-- .element: class="fragment" data-fragment-index="3" -->
-  - Mais containers por host		<!-- .element: class="fragment" data-fragment-index="3" -->
-- Maior portabilidade			<!-- .element: class="fragment" data-fragment-index="4" -->	
-
-Note: Maior portabilidade pois abstrai a rede, filesystem e outros recursos.
+![Interface](images/dockerTogether.png) <!-- .element: height="700" style="border:none; background:none; box-shadow:none" -->
 
 ---
 
-## Docker Engine
+## Máquina Física
+![Docker](images/maquinaFisica.png) <!-- .element: align="left" width="500" style="border:none; background:none; box-shadow:none" -->
 
+- Deployment lento		<!-- .element: class="fragment" data-fragment-index="1" -->
+- Alto custo			<!-- .element: class="fragment" data-fragment-index="1" -->
+- Desperdicio de recursos	<!-- .element: class="fragment" data-fragment-index="1" -->
+- Dificuldade de escalar	<!-- .element: class="fragment" data-fragment-index="1" -->
+- Dificuldade de migração	<!-- .element: class="fragment" data-fragment-index="1" -->
+<!-- - Vendor Lock-in -->
+
+--
+## Virtualizadora
+<!-- .slide: data-transition="none slide-out" --> 
+![Docker](images/hypervisor.png) <!-- .element: align="left" width="450" style="border:none; background:none; box-shadow:none" --> 
+
+#### Ganhos
+
+- Pool de recursos		<!-- .element: class="fragment" data-fragment-index="1" -->
+- Maior facilidade de escala	<!-- .element: class="fragment" data-fragment-index="1" -->
+- VMs na nuvem			<!-- .element: class="fragment" data-fragment-index="1" -->
+  - Elasticidade		<!-- .element: class="fragment" data-fragment-index="1" -->
+  - Pay as you go		<!-- .element: class="fragment" data-fragment-index="1" -->
+
+--
+
+## Virtualizadora
+<!-- .slide: data-transition="none" --> 
+![Docker](images/hypervisor.png) <!-- .element: align="left" width="450" style="border:none; background:none; box-shadow:none" --> 
+
+#### Dificuldades
+
+- Alocação de recursos <br> 
+  ainda necessária		<!-- .element: class="fragment" data-fragment-index="1" -->
+- SO guest necessário				<!-- .element: class="fragment" data-fragment-index="1" -->
+  - recursos desperdiçados			<!-- .element: class="fragment" data-fragment-index="1" -->
+- Portabilidade não garantida			<!-- .element: class="fragment" data-fragment-index="1" -->
+
+--
+## Contêineres
+![Docker](images/container.png) <!-- .element: align="left" width="400" style="border:none; background:none; box-shadow:none" --> 
+
+- Mais leves (tamanho)			<!-- .element: class="fragment" data-fragment-index="1" -->
+- Sem SO guest necessário		<!-- .element: class="fragment" data-fragment-index="1" -->
+- Menos recursos necessarios<br>
+  (CPU,RAM,Storage) 			<!-- .element: class="fragment" data-fragment-index="1" -->
+  - Mais containers por host		<!-- .element: class="fragment" data-fragment-index="1" -->
+
+Note: Maior portabilidade pois abstrai a rede, filesystem e outros recursos.
+
+--
+
+## Docker Engine
 ![Docker](images/dockerArch.png) <!-- .element: align="left" width="400" style="border:none; background:none; box-shadow:none" class="fragment" data-fragment-index="0" --> 
 
-- Docker Client	<!-- .element: class="fragment" data-fragment-index="1" -->
-- Docker Daemon <!-- .element: class="fragment" data-fragment-index="1" -->
-- Contêineres	<!-- .element: class="fragment" data-fragment-index="1" -->
-- Imagens	<!-- .element: class="fragment" data-fragment-index="1" -->
-- Registry	<!-- .element: class="fragment" data-fragment-index="1" -->
+- API	<!-- .element: class="fragment" data-fragment-index="1" -->
+- Empacotamento <!-- .element: class="fragment" data-fragment-index="1" -->     
+- DevOps (Separação de Funções)	<!-- .element: class="fragment" data-fragment-index="1" -->                                                                                  
+- Densidade <!-- .element: class="fragment" data-fragment-index="1" -->
+- Maior portabilidade <!-- .element: class="fragment" data-fragment-index="1" -->	
 
-Note: Afinal o que é docker?
-      Utilizar o LXC direto é complexo.
-      Docker criou uma interface amigável para criar, executar e gerenciar containers.
-      Meio de campo entre usuario e kernel
+Note: 
+API - para criar, gerenciar destruir imagens e conteineres
+Empacotamento - 
+DevOps - Imagem desenvolvida por DEV. Infra apenas roda o conteiner, disponibilizando a infra de LB, storage, cluster. 
+
+---
+
+<!-- .slide: data-transition="fade" -->
+## Conceitos Básicos de Docker
+
+### Conceitos:
+
+- Conteiner
+- Imagem
+- Registry
+
 --
+
+<!-- .slide: data-transition="fade" -->
+## Conceitos Básicos de Docker
+
+### Comandos:
+
+```
+$ docker run
+$ docker pull
+$ docker build
+$ docker stop
+```
+
+---
 
 ## Componentes docker
 ![Docker](images/componentes1.png) <!-- .slide: data-transition="fade-out" -->
@@ -213,10 +273,29 @@ Note: Afinal o que é docker?
 
 Demo
 
+Note:
+% startar servico docker (docker-engine x docker-machine)
+% docker images
+% docker run -it --rm centos:6.7 /bin/bash
+% cat /etc/*release*
+% ps aux hostname ifconfig
+% yum install -y vim
+# alusao a invasao hacker, comportamento inadequado de aplicacao nova, etc
+% rm -rf /usr/bin /usr/sbin /bin /sbin /lib
+% exit
+% docker run -it --rm centos:6.7 /bin/bash
+ 
+# owncloud
+% docker run -d --name o1 -p 8080:80 owncloud:8
+% docker run -d --name o2 -p 8081:80 owncloud:8
+# Notem a facilidade de instalação e uso. Quase um gerenciador de pacotes: apt, yum. Se integra facilmente com a idéia de SaaS.
+# Muito bom para implementar ambientes de testes, cursos, poc etc.
+ 
 ---
 
 ## Docker Compose
 
+- Ambientes multi-conteiner
 - Deploy mais fácil:
   - docker-compose up
   - docker-compose stop
