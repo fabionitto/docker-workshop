@@ -405,146 +405,153 @@ Note: Orquestração de Conteineres
 - Nomad
 
 ---
- <!-- .slide: data-transition="fade-out" data-background-image="none" -->
 
-![Docker](images/kubernetes_archi01.png)
-
---
-
-![Docker](images/kubernetes_archi02.png)
-
---
-
-![Docker](images/kubernetes_archi03.png)
+<!-- .slide: data-background-image="none"  data-transition="fade" -->
+![Docker](images/kubernetes_archi01.png) <!-- .element: style="border:none; background:none; box-shadow:none" -->
 
 ---
 
-![Docker](images/kubernetes_example1_01.png)
+<!-- .slide: data-background-image="none"  data-transition="fade" -->
+![Docker](images/kubernetes_archi02.png) <!-- .element: style="border:none; background:none; box-shadow:none" -->
 
---
+---
 
-![Docker](images/kubernetes_example1_02.png)
+<!-- .slide: data-background-image="none"  data-transition="fade" -->
+![Docker](images/kubernetes_archi03.png) <!-- .element: style="border:none; background:none; box-shadow:none" -->
 
 ---
 
 ## Kubernetes
 
---
+---
 
-![Docker](images/kubernetes_archi01.png) <!-- .slide: data-transition="fade-out" -->
-
-<!-- .slide: data-background-image="none" -->
---
-
-![Docker](images/kubernetes_archi02.png) <!-- .slide: data-transition="fade-out" -->
-
---
-
-![Docker](images/kubernetes_archi03.png) <!-- .slide: data-transition="fade-out" -->
+<!-- .slide: data-background-image="none"  data-transition="fade"  -->
+![Docker](images/kubernetes_example1_01.png) <!-- .element: height="600" style="border:none; background:none; margin:1in; box-shadow:none" -->
 
 ---
 
-![Docker](images/kubernetes_example1_01.png) <!-- .slide: data-transition="fade-out" -->
+<!-- .slide: data-background-image="none"  data-transition="none" -->
+![Docker](images/kubernetes_example1_02.png) <!-- .element: height="740" style="border:none; background:none; margin:0px; box-shadow:none" -->
 
---
+---
 
-![Docker](images/kubernetes_example1_02.png) <!-- .slide: data-transition="none" -->
+<!-- .slide: data-background-image="none"  data-transition="none" -->
+![Docker](images/kubernetes_example1_03.png) <!-- .element: height="740" style="border:none; background:none; margin:0px; box-shadow:none" -->
 
---
+---
 
-![Docker](images/kubernetes_example1_03.png) <!-- .slide: data-transition="none" -->
+<!-- .slide: data-background-image="none"  data-transition="none" -->
+![Docker](images/kubernetes_example1_04.png) <!-- .element: height="740" style="border:none; background:none; margin:0px; box-shadow:none" -->
 
---
+---
 
-![Docker](images/kubernetes_example1_04.png) <!-- .slide: data-transition="none" -->
+<!-- .slide: data-background-image="none"  data-transition="none" -->
+![Docker](images/kubernetes_example1_05.png) <!-- .element: height="740" style="border:none; background:none; margin:0px; box-shadow:none" -->
 
---
+---
 
-![Docker](images/kubernetes_example1_05.png) <!-- .slide: data-transition="none" -->
+<!-- .slide: data-background-image="none"  data-transition="none" -->
+![Docker](images/kubernetes_example1_06.png) <!-- .element: height="740" style="border:none; background:none; margin:0px; box-shadow:none" -->
 
---
+---
 
-![Docker](images/kubernetes_example1_06.png) <!-- .slide: data-transition="none" -->
+<!-- .slide: data-background-image="none"  data-transition="none" -->
+![Docker](images/kubernetes_example1_07.png) <!-- .element: height="740" style="border:none; background:none; margin:0px; box-shadow:none" -->
 
---
+---
 
-![Docker](images/kubernetes_example1_07.png) <!-- .slide: data-transition="none" -->
+<!-- .slide: data-background-image="none"  data-transition="none" -->
+![Docker](images/kubernetes_example1_08.png) <!-- .element: height="740" style="border:none; background:none; margin:0px; box-shadow:none" -->
 
---
+---
 
-![Docker](images/kubernetes_example1_08.png) <!-- .slide: data-transition="none" -->
+<!-- .slide: data-background-image="none"  data-transition="none" -->
+![Docker](images/kubernetes_example1_09.png) <!-- .element: height="740" style="border:none; background:none; margin:0px; box-shadow:none" -->
 
---
+---
 
-![Docker](images/kubernetes_example1_09.png) <!-- .slide: data-transition="none" -->
+<!-- .slide: data-background-image="none"  data-transition="none" -->
+![Docker](images/kubernetes_example1_10.png) <!-- .element: height="740" style="border:none; background:none; margin:0px; box-shadow:none" -->
 
---
+---
 
-![Docker](images/kubernetes_example1_10.png) <!-- .slide: data-transition="none" -->
+<!-- .slide: data-background-image="none"  data-transition="none" -->
+![Docker](images/kubernetes_example1_11.png) <!-- .element: height="740" style="border:none; background:none; margin:0px; box-shadow:none" -->
 
---
+---
 
-![Docker](images/kubernetes_example1_11.png) <!-- .slide: data-transition="none" -->
+<!-- .slide: data-background-image="none"  data-transition="none" -->
+![Docker](images/kubernetes_example1_12.png) <!-- .element: height="740" style="border:none; background:none; margin:0px; box-shadow:none" -->
 
---
+---
 
-![Docker](images/kubernetes_example1_12.png) <!-- .slide: data-transition="none" -->
+<!-- .slide: data-background-image="none"  data-transition="none" -->
+![Docker](images/kubernetes_example1_13.png) <!-- .element: height="740" style="border:none; background:none; margin:0px; box-shadow:none" -->
 
---
+---
 
-![Docker](images/kubernetes_example1_13.png) <!-- .slide: data-transition="none" -->
+<!-- .slide: data-background-image="none"  data-transition="none" -->
+![Docker](images/kubernetes_example1_14.png) <!-- .element: height="740" style="border:none; background:none; margin:0px; box-shadow:none" -->
 
---
+---
 
-![Docker](images/kubernetes_example1_14.png) <!-- .slide: data-transition="none" -->
+<!-- .slide: data-background-image="none"  data-transition="none" -->
+![Docker](images/kubernetes_example1_15.png) <!-- .element: height="740" style="border:none; background:none margin:0px; box-shadow:none" -->
 
---
+---
 
-![Docker](images/kubernetes_example1_15.png) <!-- .slide: data-transition="none" -->
+<!-- .slide: data-background-image="none"  data-transition="none" -->
+![Docker](images/kubernetes_example1_16.png) <!-- .element: height="740" style="border:none; background:none; margin:0px; box-shadow:none" -->
 
---
+---
 
-![Docker](images/kubernetes_example1_16.png) <!-- .slide: data-transition="none" -->
+<!-- .slide: data-background-image="none"  data-transition="none" -->
+![Docker](images/kubernetes_example1_17.png) <!-- .element: height="740" style="border:none; background:none; margin:0px; box-shadow:none" -->
 
---
+---
 
-![Docker](images/kubernetes_example1_17.png) <!-- .slide: data-transition="none" -->
+<!-- .slide: data-background-image="none"  data-transition="none" -->
+![Docker](images/kubernetes_example1_18.png) <!-- .element: height="740" style="border:none; background:none; margin:0px; box-shadow:none" -->
 
---
+---
 
-![Docker](images/kubernetes_example1_18.png) <!-- .slide: data-transition="none" -->
+<!-- .slide: data-background-image="none"  data-transition="none" -->
+![Docker](images/kubernetes_example1_19.png) <!-- .element: height="740" style="border:none; background:none; margin:0px; box-shadow:none" -->
 
---
+---
 
-![Docker](images/kubernetes_example1_19.png) <!-- .slide: data-transition="none" -->
+<!-- .slide: data-background-image="none"  data-transition="none" -->
+![Docker](images/kubernetes_example1_20.png) <!-- .element: height="740" style="border:none; background:none; margin:0px; box-shadow:none" -->
 
---
+---
 
-![Docker](images/kubernetes_example1_20.png) <!-- .slide: data-transition="none" -->
+<!-- .slide: data-background-image="none"  data-transition="none" -->
+![Docker](images/kubernetes_example1_21.png) <!-- .element: height="740" style="border:none; background:none; margin:0px; box-shadow:none" -->
 
---
+---
 
-![Docker](images/kubernetes_example1_21.png) <!-- .slide: data-transition="none" -->
+<!-- .slide: data-background-image="none"  data-transition="none" -->
+![Docker](images/kubernetes_example1_22.png) <!-- .element: height="740" style="border:none; background:none; margin:0px; box-shadow:none" -->
 
---
+---
 
-![Docker](images/kubernetes_example1_22.png) <!-- .slide: data-transition="none" -->
+<!-- .slide: data-background-image="none"  data-transition="none" -->
+![Docker](images/kubernetes_example1_23.png) <!-- .element: height="740" style="border:none; background:none; margin:0px; box-shadow:none" -->
 
---
+---
 
-![Docker](images/kubernetes_example1_23.png) <!-- .slide: data-transition="none" -->
+<!-- .slide: data-background-image="none"  data-transition="none" -->
+![Docker](images/kubernetes_example1_24.png) <!-- .element: height="740" style="border:none; background:none; margin:0px; box-shadow:none" -->
 
---
+---
 
-![Docker](images/kubernetes_example1_24.png) <!-- .slide: data-transition="none" -->
+<!-- .slide: data-background-image="none"  data-transition="none" -->
+![Docker](images/kubernetes_example1_25.png) <!-- .element: height="740" style="border:none; background:none; margin:0px; box-shadow:none" -->
 
---
+---
 
-![Docker](images/kubernetes_example1_25.png) <!-- .slide: data-transition="none" -->
-
---
-
-![Docker](images/kubernetes_example1_26.png) <!-- .slide: data-transition="none" -->
+<!-- .slide: data-background-image="none"  data-transition="none" -->
+![Docker](images/kubernetes_example1_26.png) <!-- .element: height="740" style="border:none; background:none; margin:0px; box-shadow:none" -->
 
 ---
 
