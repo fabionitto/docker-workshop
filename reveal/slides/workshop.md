@@ -150,7 +150,7 @@ chroot - altera o diretorio root do sistema/conteiner
 
 ### Docker simplifica o uso:
 
-![Interface](images/dockerTogether.png) <!-- .element: height="700" style="border:none; background:none; box-shadow:none" -->
+![Interface](images/dockerTogether.png) <!-- .element: height="500" style="border:none; background:none; box-shadow:none" -->
 
 ---
 
@@ -293,19 +293,6 @@ Note:
  
 ---
 
-## Docker Compose
-
-- Ambientes multi-conteiner
-- Deploy mais fácil:
-  - docker-compose up
-  - docker-compose stop
-
-- Escalabilidade
-
-Note: Exemplo SEI: versão 1 da api.
-	Docker compose já está na versão 2 da API, contemplando volumes e networks.
----
-
 ## Provisionamento, Deployment e Configuração
 
 **2 Visões:**
@@ -326,8 +313,8 @@ Note: Exemplo SEI: versão 1 da api.
 <li>
 <table style="border: 1px solid black">
   <tr style="border: 1px solid black">
-    <th style="border: 1px solid black; text-align: center"> Deployment </th>
     <th style="border: 1px solid black"> Provisionamento </th>
+    <th style="border: 1px solid black"> Deployment </th>
     <th> Configuração </th>
   </tr>
 </table>
@@ -341,7 +328,8 @@ Note: Exemplo SEI: versão 1 da api.
 
 --
 
-Ferramentas como:
+**Ferramentas como:**
+
 - Puppet
 - Chef
 - Ansible
@@ -349,10 +337,25 @@ Ferramentas como:
 
 Atuam, de formas diversas, em toda a linha de produção, buscando a automatização das tarefas de provisionamento, deployment e configuração.
 
-Docker não as substituem, mas as complementam.
+
+**Docker não as substituem, mas as complementam.**
 
 
 Note: O que foi visto sobre docker, basicamente se encaixa na visão de deployment de aplicações.
+
+---
+
+## Docker Compose
+
+- Ambientes multi-conteiner
+- Deploy mais fácil:
+  - docker-compose up
+  - docker-compose stop
+
+- Escalabilidade
+
+Note: Exemplo SEI: versão 1 da api.
+	Docker compose já está na versão 2 da API, contemplando volumes e networks.
 
 --
 
@@ -383,11 +386,35 @@ Note: Orquestração de Conteineres
 - Nomad
 
 ---
+ <!-- .slide: data-transition="fade-out" data-background-image="none" -->
+
+![Docker](images/kubernetes_archi01.png)
+
+--
+
+![Docker](images/kubernetes_archi02.png)
+
+--
+
+![Docker](images/kubernetes_archi03.png)
+
+---
+
+![Docker](images/kubernetes_example1_01.png)
+
+--
+
+![Docker](images/kubernetes_example1_02.png)
+
+---
 
 ## Kubernetes
 
+--
+
 ![Docker](images/kubernetes_archi01.png) <!-- .slide: data-transition="fade-out" -->
 
+<!-- .slide: data-background-image="none" -->
 --
 
 ![Docker](images/kubernetes_archi02.png) <!-- .slide: data-transition="fade-out" -->
