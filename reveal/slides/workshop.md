@@ -306,7 +306,53 @@ Note: Exemplo SEI: versão 1 da api.
 	Docker compose já está na versão 2 da API, contemplando volumes e networks.
 ---
 
-## Provisionamento
+## Provisionamento, Deployment e Configuração
+
+**2 Visões:**
+
+<ol>
+<li> 
+<table style="border: 1px solid black">
+  <tr style="border: 1px solid black">
+    <th colspan="2" style="border: 1px solid black; text-align: center"> Deployment </th>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black"> Provisionamento </td>
+    <td> Configuração </td>
+  </tr>
+</table>
+</li>
+
+<li>
+<table style="border: 1px solid black">
+  <tr style="border: 1px solid black">
+    <th style="border: 1px solid black; text-align: center"> Deployment </th>
+    <th style="border: 1px solid black"> Provisionamento </th>
+    <th> Configuração </th>
+  </tr>
+</table>
+</li>
+</ol>
+--
+
+- **Provisionamento:** Preparar a maquina/host/cluster com sistema e bibliotecas
+- **Deployment:** Entregar a aplicação
+- **Configuração:** Configurar a aplicação
+
+--
+
+Ferramentas como:
+- Puppet
+- Chef
+- Ansible
+- Salt
+
+Atuam, de formas diversas, em toda a linha de produção, buscando a automatização das tarefas de provisionamento, deployment e configuração.
+
+Docker não as substituem, mas as complementam.
+
+
+Note: O que foi visto sobre docker, basicamente se encaixa na visão de deployment de aplicações.
 
 --
 
@@ -315,6 +361,7 @@ Demo
 ---
 
 ## Orquestração
+Note: Orquestração de Conteineres
 
 --
 
