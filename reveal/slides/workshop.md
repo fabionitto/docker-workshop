@@ -19,6 +19,14 @@ DTI/MP
 
 ## Quem somos?
 
+Note: 
+Marcelo ATI desde 2010
+- Prazer enorme estar aqui
+- Saindo da zona de conforto
+- Temos para mostrar o que está acontecendo. Realidade
+Velocidade de convergência; Caso do CoreOs
+
+
 ---
 
 ## Motivação
@@ -27,6 +35,8 @@ DTI/MP
 <br>
 
 #### Implantação / Sustentação de Sistemas <!-- .element: class="fragment" data-fragment-index="1" -->
+#### Infra em Nuvem <!-- .element: class="fragment" data-fragment-index="1" -->
+
 
 Note: Entrada no MP em 2010 - na infra 2014
 - Explicar q a motivação veio na infra
@@ -84,15 +94,24 @@ Note: - Convidamos vcs a entrarem nomundo dos conteineres e orquestr
 <!-- .slide: data-background-image="none" -->
 ![Docker](images/seinumeros.png) <!-- .element: height="700" style="border:none; background:none; box-shadow:none"-->
 
+Note: simple demo
+mostra grafana / kibana
+
 --
 
 <!-- .slide: data-background-image="none"  data-transition="fade" -->
 ![Docker](images/seikubenumeros1.png) <!-- .element: height="600" -->
 
+Note: simple demo
+mostra grafana / kibana
+
 --
 
 <!-- .slide: data-background-image="none" data-transition="fade" -->
 ![Docker](images/seikubenumeros2.png) <!-- .element: height="600" -->
+
+Note: simple demo
+mostra grafana / kibana
 
 ---
 ## O que é Contêiner?
@@ -212,6 +231,25 @@ Note: Afinal o que é docker?
 --
 
 Demo
+
+Note:
+% startar servico docker (docker-engine x docker-machine)
+	% docker images
+% docker run -it --rm centos:6.7 /bin/bash
+% cat /etc/*release*
+% ps aux hostname ifconfig
+% yum install -y vim
+% alusao a invasao hacker, comportamento inadequado de aplicacao nova, etc
+% rm -rf /usr/bin /usr/sbin /bin /sbin /lib
+% exit
+% docker run -it --rm centos:6.7 /bin/bash
+
+% exemplo tomcat explica como instala um tomcat normalmente
+% vm, java, tomcat
+% docker run --rm -p 8888:8080 tomcat:8.0
+% docker run -d -p 99:8080 tomcat:8.0
+% docker run -d -p 999:8080 tomcat:8.0
+
 
 ---
 
