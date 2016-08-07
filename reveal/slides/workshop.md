@@ -405,27 +405,6 @@ Note: Orquestração de Conteineres
 - Nomad
 
 ---
- <!-- .slide: data-transition="fade-out" data-background-image="none" -->
-
-![Docker](images/kubernetes_archi01.png)
-
---
-
-![Docker](images/kubernetes_archi02.png)
-
---
-
-![Docker](images/kubernetes_archi03.png)
-
----
-
-![Docker](images/kubernetes_example1_01.png)
-
---
-
-![Docker](images/kubernetes_example1_02.png)
-
----
 
 ## Kubernetes
 
