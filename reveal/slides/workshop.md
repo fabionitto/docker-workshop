@@ -367,11 +367,10 @@ Note: O que foi visto sobre docker, basicamente se encaixa na visão de deployme
 ## Docker Compose
 
 - Ambientes multi-conteiner
+- Docker-Compose.yml
 - Deploy mais fácil:
   - docker-compose up
   - docker-compose stop
-
-- Escalabilidade
 
 Note: Exemplo SEI: versão 1 da api.
 	Docker compose já está na versão 2 da API, contemplando volumes e networks.
